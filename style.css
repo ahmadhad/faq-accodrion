@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Work Sans', sans-serif;
+}
+:root{
+    --white:#fff;
+    --Light-pink:hsl(275, 100%, 97%);
+    --rayish-purple:hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+body{
+    min-height: 100vh;
+    background:url(./assets/images/background-pattern-desktop.svg)no-repeat;
+    background-color: var(--Light-pink);
+    min-width:100%;
+}
+.container{
+    width:550px;
+    max-width:100%;
+    background-color:var(--white);
+    margin:200px auto;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+h1,h4{
+    color:var(--rayish-purple);
+}
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.question h4{
+font-size: 20px;
+font-weight: 600;
+}
+.question p{
+    color: var(--Light-pink);
+}
+.hidden{
+    display: none;
+}
+.plus,.minus{
+    cursor: pointer;
+}
+.attribution{
+    margin-top:100px;
+    background-color: var(--rayish-purple);
+    color:#000;
+    padding:20px;
+}
+.attribution a{
+    text-decoration: none;
+    color:#fff;
+    font-size:16px;
+}
